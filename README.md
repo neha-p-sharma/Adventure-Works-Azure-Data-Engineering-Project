@@ -9,6 +9,7 @@ The solution ingests raw data from an external HTTP source (Git-based repository
 ---
 
 # 🏗 Architecture Flow
+![Architecture Diagram](ArchitectureDiagram.png)
 
 ## 🔹 Data Source
 - HTTP Server (Git-hosted raw files)
@@ -24,6 +25,10 @@ The solution ingests raw data from an external HTTP source (Git-based repository
    - Copy activity to move data from raw → silver
    - Validation activities for pipeline monitoring
    - Error handling & dependency management
+
+### 🔄 Azure Data Factory Pipeline
+
+![ADF Pipeline](ADF_Pipeline.png)
 
 2. Azure Databricks:
    - Data cleansing
